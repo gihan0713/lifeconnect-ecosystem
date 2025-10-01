@@ -34,11 +34,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" variant="hero" className="group">
+            <Button size="lg" variant="hero" className="group" onClick={() => window.location.href = '/auth'}>
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" onClick={() => document.querySelector('#how')?.scrollIntoView({ behavior: 'smooth' })}>
               See How It Works
             </Button>
           </div>

@@ -44,11 +44,11 @@ const CTA = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "600ms" }}>
-            <Button size="lg" variant="hero" className="group shadow-lg">
+            <Button size="lg" variant="hero" className="group shadow-lg" onClick={() => window.location.href = '/auth'}>
               Create Your Profile
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" onClick={() => document.querySelector('#how')?.scrollIntoView({ behavior: 'smooth' })}>
               Learn More
             </Button>
           </div>
