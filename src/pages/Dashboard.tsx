@@ -7,6 +7,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PlusCircle, Wallet, TrendingUp, Users, Building2, LogOut } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import DiscoverProjects from "@/components/DiscoverProjects";
+import IncomeTracking from "@/components/IncomeTracking";
+import CityDevelopment from "@/components/CityDevelopment";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -217,7 +220,9 @@ const Dashboard = () => {
                     <CardContent>
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-muted-foreground">{project.category}</span>
-                        <Button variant="ghost" size="sm">View Details</Button>
+                        <Button variant="ghost" size="sm" onClick={() => navigate(`/project/${project.id}`)}>
+                          View Details
+                        </Button>
                       </div>
                     </CardContent>
                   </Card>
@@ -227,30 +232,15 @@ const Dashboard = () => {
           </TabsContent>
 
           <TabsContent value="discover">
-            <Card className="p-12 text-center">
-              <h3 className="text-xl font-semibold mb-2">Discover Opportunities</h3>
-              <p className="text-muted-foreground">
-                Find projects that match your skills and contribute to your community
-              </p>
-            </Card>
+            <DiscoverProjects />
           </TabsContent>
 
           <TabsContent value="income">
-            <Card className="p-12 text-center">
-              <h3 className="text-xl font-semibold mb-2">Income Tracking</h3>
-              <p className="text-muted-foreground">
-                Monitor your earnings and see how your work creates impact
-              </p>
-            </Card>
+            <IncomeTracking />
           </TabsContent>
 
           <TabsContent value="city">
-            <Card className="p-12 text-center">
-              <h3 className="text-xl font-semibold mb-2">City Development</h3>
-              <p className="text-muted-foreground">
-                Vote on community projects and see the impact of your contributions
-              </p>
-            </Card>
+            <CityDevelopment />
           </TabsContent>
         </Tabs>
       </main>
