@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Package, Wrench, Grid3x3, Globe } from "lucide-react";
+import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf } from "lucide-react";
 
 const categories = [
   {
@@ -25,6 +25,30 @@ const categories = [
     description: "Connect and collaborate worldwide",
     icon: Globe,
     url: "https://thinkglobal.lovable.app/",
+  },
+  {
+    title: "AI Tools List",
+    description: "Comprehensive directory of AI-powered tools",
+    icon: Bot,
+    url: "https://freeai-portal.lovable.app/",
+  },
+  {
+    title: "STEM Education",
+    description: "Innovative learning resources for STEM subjects",
+    icon: GraduationCap,
+    url: "https://stemedu.lovable.app/",
+  },
+  {
+    title: "Medium Tools",
+    description: "Creative tools for content creators",
+    icon: Wand2,
+    url: "https://gen-wiz-web.lovable.app/",
+  },
+  {
+    title: "Future Earth",
+    description: "Sustainable solutions for our planet",
+    icon: Leaf,
+    url: "https://earthfuture.lovable.app/",
   },
 ];
 
