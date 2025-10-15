@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store, Users } from "lucide-react";
+import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store, Users, Building2 } from "lucide-react";
 
 const categories = [
   {
@@ -61,6 +61,12 @@ const categories = [
     description: "Collaborate and bring ideas to life together",
     icon: Users,
     url: "https://invest-a-idea.lovable.app/",
+  },
+  {
+    title: "Property",
+    description: "Find and connect with property opportunities",
+    icon: Building2,
+    url: "https://lanka-crib-connect.lovable.app/",
   },
 ];
 
