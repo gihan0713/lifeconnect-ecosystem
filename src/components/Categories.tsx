@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store } from "lucide-react";
+import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store, Users } from "lucide-react";
 
 const categories = [
   {
@@ -55,6 +55,12 @@ const categories = [
     description: "Global marketplace for trading and commerce",
     icon: Store,
     url: "https://tradenest-global-hub.lovable.app/",
+  },
+  {
+    title: "Team up",
+    description: "Collaborate and bring ideas to life together",
+    icon: Users,
+    url: "https://invest-a-idea.lovable.app/",
   },
 ];
 
