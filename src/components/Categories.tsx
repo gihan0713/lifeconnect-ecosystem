@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store, Users, Building2, MessageSquare } from "lucide-react";
+import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store, Users, Building2, MessageSquare, Coins } from "lucide-react";
 
 const categories = [
   {
@@ -73,6 +73,12 @@ const categories = [
     description: "Share your feedback and access resources",
     icon: MessageSquare,
     url: "https://drive.google.com/drive/folders/1swJcZdjHK3Lclwc6jIQJicp229fdi4ZB",
+  },
+  {
+    title: "Life Connect Earn",
+    description: "Connect with opportunities to earn and grow",
+    icon: Coins,
+    url: "https://lifeconnectearn.lovable.app/",
   },
 ];
 
