@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store, Users, Building2, MessageSquare, Coins } from "lucide-react";
+import { ExternalLink, Package, Wrench, Grid3x3, Globe, Bot, GraduationCap, Wand2, Leaf, Store, Users, Building2, MessageSquare, Coins, Sparkles } from "lucide-react";
 
 const categories = [
   {
@@ -79,6 +79,12 @@ const categories = [
     description: "Connect with opportunities to earn and grow",
     icon: Coins,
     url: "https://lifeconnectearn.lovable.app/",
+  },
+  {
+    title: "Gofy Girl for google",
+    description: "AI prompts and creative assistance",
+    icon: Sparkles,
+    url: "https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221cd-UMl5YBRzB_fj-KdhFeOcdG2cnGhEC%22%5D,%22action%22:%22open%22,%22userId%22:%22101921928615219123956%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing",
   },
 ];
 
